@@ -13,8 +13,10 @@
 (https://anshumanquardtech.netlify.app/)
 -My apporach regarding project:-
 
-First Created a Store using  Redux then  creating a Routing between the pages and then created a another page for the listing the  Notes items in a synchronous way .
-The website is fully responsive to all size devices. 
+1.First Created a Store using  Redux then  creating a Routing between the pages and then created a another page for the listing the  Notes items in a synchronous way .
+2.The website is fully responsive to all size devices. 
+3.Uses localStorage to save the Todo and update directly on the localstorage .
+4.You can Mark as complete and also delete the Todo if wanted.
 
 
 
