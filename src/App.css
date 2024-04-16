@@ -1,0 +1,140 @@
+.logo{
+    mix-blend-mode:darken;
+}
+body{
+    background-color: #dbe2e9;
+}
+
+/* styling  suvichar button  */
+
+
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    left: 8px;
+    width: 254px;
+    height: 60px;
+    padding: 4px;
+    color: #121010;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  
+  .btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+  
+  .btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+  }
+  
+  .btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #e7e7ec;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #0b3a22;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+  
+  .btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #d8d0d0;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s; 
+    position: relative;
+    background: #588e1a;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
+
+
+  /* styling of the view Notes button */
+  .wrapper {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .link_wrapper {
+    position: relative;
+  }
+  
+  .btn {
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin-left: 10px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #4a6e5c;
+    text-align: center;
+    color: azure !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #749881;
+    border-radius: 3px;
+    transition: all .35s;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .35s;
+  }
+  
+  .icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+  }
+  
+  .btn:hover {
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71 !important;
+  }
+  
+  .btn:hover + .icon {
+    border: 3px solid #2ecc71;
+    right: -25%;
+  }
+
+
+  /* my media query */
+  @media (max-width:500px){
+    .mymedia__query{
+      position: absolute;
+       left: 30%;
+    }
+  }
